@@ -1,12 +1,4 @@
-/**
- * EDITE AQUI SEUS LINKS.
- * Use uma URL completa (https://...) ou null para manter o card indisponível.
- * WhatsApp: use https://wa.me/55DDDNUMERO (somente números).
- * E-mail: use apenas o endereço, sem "mailto:".
- *
- * LinkedIn, GitHub e e-mail foram preenchidos com dados anteriormente
- * informados por Luiz Eduardo. Confira antes de publicar.
- */
+
 window.SITE_CONFIG = {
   name: "Luiz Eduardo",
   organization: "Lumos Connect",
