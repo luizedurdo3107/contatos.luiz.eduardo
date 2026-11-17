@@ -1,87 +1,295 @@
+
 <!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#080b10" />
+
     <meta
       name="description"
       content="Luiz Eduardo — CEO e fundador da Lumos Connect. Tecnologia, inovação, educação e formas de contato."
     />
+
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Luiz Eduardo | Lumos Connect" />
-    <meta property="og:description" content="Tecnologia, inovação e educação. Conheça meu trabalho e conecte-se comigo." />
+    <meta
+      property="og:description"
+      content="Tecnologia, inovação e educação. Conheça meu trabalho e conecte-se comigo."
+    />
+
     <title>Luiz Eduardo — Lumos Connect</title>
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+    <!-- FOTO DO PERFIL E ÍCONE DO NAVEGADOR -->
+    <!-- Altere apenas o caminho da imagem abaixo -->
+    <link
+      rel="icon"
+      id="site-favicon"
+      href="assets/foto.jpg"
+    />
+
     <link rel="stylesheet" href="styles.css" />
+
     <script src="config.js" defer></script>
     <script src="main.js" defer></script>
   </head>
+
   <body>
-    <a class="skip-link" href="#contato">Ir para os contatos</a>
+    <a class="skip-link" href="#contato">
+      Ir para os contatos
+    </a>
+
     <div class="site-shell">
+
+      <!-- CABEÇALHO -->
       <header class="site-header" aria-label="Cabeçalho">
-        <a class="wordmark" href="#inicio" aria-label="Voltar ao início">LE<span>.</span></a>
-        <a class="brand-name" href="#sobre">LUMOS CONNECT</a>
+        <a
+          class="wordmark"
+          href="#inicio"
+          aria-label="Voltar ao início"
+        >
+          LE<span>.</span>
+        </a>
+
+        <a class="brand-name" href="#sobre">
+          LUMOS CONNECT
+        </a>
       </header>
 
       <main>
-        <section id="inicio" class="hero" aria-labelledby="hero-name">
-          <div class="hero-monogram" aria-hidden="true"><span>LE</span></div>
-          <div class="eyebrow hero-eyebrow">CEO &amp; FUNDADOR</div>
-          <h1 id="hero-name">Luiz Eduardo</h1>
-          <p class="hero-company">Lumos Connect</p>
-          <p class="hero-interests">Tecnologia <span aria-hidden="true">·</span> Inovação <span aria-hidden="true">·</span> Educação</p>
-          <p class="hero-description">Empreendedor e desenvolvedor focado em transformar ideias em soluções tecnológicas que conectam inovação, educação e impacto social.</p>
-          
-          <div class="sr-only" id="contact-feedback" role="status" aria-live="polite"></div>
-        </section>
 
-        <section id="contato" class="content-section contact-section" aria-labelledby="contact-title">
-          <p class="eyebrow">CONTATO</p>
-          <h2 id="contact-title">Vamos nos conectar?</h2>
-          <p class="section-description">Escolha o melhor canal para entrar em contato.</p>
-          <div class="contact-grid" id="contact-grid" aria-label="Meus canais de contato"></div>
-          <p class="contact-caption">Canais marcados como “Em breve” aguardam configuração.</p>
-        </section>
+        <!-- APRESENTAÇÃO -->
+        <section
+          id="inicio"
+          class="hero"
+          aria-labelledby="hero-name"
+        >
 
-        <section id="sobre" class="content-section about-section" aria-labelledby="about-title">
-          <p class="eyebrow">PERSPECTIVA</p>
-          <h2 id="about-title">Sobre mim</h2>
-          <p class="about-copy">Sou apaixonado por tecnologia, empreendedorismo e inovação. Como fundador da Lumos Connect, busco transformar ideias em soluções digitais que contribuam para experiências mais acessíveis e conectadas.</p>
-        </section>
-
-        <section id="competencias" class="content-section skills-section" aria-labelledby="skills-title">
-          <p class="eyebrow">EXPERTISE</p>
-          <h2 id="skills-title">Tecnologias &amp; Competências</h2>
-          <div class="skill-list" aria-label="Minhas habilidades técnicas">
-            <span class="skill skill-accent">Python</span>
-            <span class="skill">JavaScript</span>
-            <span class="skill">Node.js</span>
-            <span class="skill skill-accent">React</span>
-            <span class="skill">Docker</span>
-            <span class="skill">DevOps</span>
+          <!-- FOTO DO PERFIL -->
+          <div class="hero-monogram">
+            <img
+              id="profile-photo"
+              class="hero-profile-photo"
+              alt="Foto de Luiz Eduardo"
+              width="94"
+              height="94"
+            />
           </div>
+
+          <div class="eyebrow hero-eyebrow">
+            CEO &amp; FUNDADOR
+          </div>
+
+          <h1 id="hero-name">
+            Luiz Eduardo
+          </h1>
+
+          <p class="hero-company">
+            Lumos Connect
+          </p>
+
+          <p class="hero-interests">
+            Tecnologia
+            <span aria-hidden="true">·</span>
+            Inovação
+            <span aria-hidden="true">·</span>
+            Educação
+          </p>
+
+          <p class="hero-description">
+            Empreendedor e desenvolvedor focado em
+            transformar ideias em soluções tecnológicas
+            que conectam inovação, educação e impacto social.
+          </p>
+
+          <!-- BOTÃO DO WHATSAPP -->
+          <a
+            id="whatsapp-cta"
+            class="save-contact"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Conversar com Luiz Eduardo pelo WhatsApp"
+          >
+
+            <svg
+              class="button-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M21 11.5a8.4 8.4 0 0 1-.9 3.8A8.5 8.5 0 0 1 12.5 20a8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8A8.5 8.5 0 0 1 12.5 3a8.5 8.5 0 0 1 8.5 8.5Z"
+              />
+              <path
+                d="M9 9.5c.3 2.1 2.2 4 4.3 4.5l1.3-1 1.9.8-.3 1.4c-.3.9-1.5 1.1-2.6.9-3.1-.7-5.2-2.9-6-5.9-.3-1 .1-2.2 1-2.5l1.3-.2.8 1.7-1 1.3Z"
+              />
+            </svg>
+
+            Conversar pelo WhatsApp
+          </a>
+
+          <p class="save-note" id="whatsapp-note">
+            Para ativar o botão, configure seu número em config.js.
+          </p>
+
         </section>
 
-        <section id="humano" class="content-section soft-skills-section" aria-labelledby="human-title">
-          <p class="eyebrow">HUMANO</p>
-          <h2 id="human-title">Além do código</h2>
+        <!-- CONTATOS -->
+        <section
+          id="contato"
+          class="content-section contact-section"
+          aria-labelledby="contact-title"
+        >
+
+          <p class="eyebrow">
+            CONTATO
+          </p>
+
+          <h2 id="contact-title">
+            Vamos nos conectar?
+          </h2>
+
+          <p class="section-description">
+            Escolha o melhor canal para entrar em contato.
+          </p>
+
+          <div
+            class="contact-grid"
+            id="contact-grid"
+            aria-label="Meus canais de contato"
+          ></div>
+
+          <p class="contact-caption">
+            Canais marcados como “Em breve” aguardam configuração.
+          </p>
+
+        </section>
+
+        <!-- SOBRE MIM -->
+        <section
+          id="sobre"
+          class="content-section about-section"
+          aria-labelledby="about-title"
+        >
+
+          <p class="eyebrow">
+            PERSPECTIVA
+          </p>
+
+          <h2 id="about-title">
+            Sobre mim
+          </h2>
+
+          <p class="about-copy">
+            Sou apaixonado por tecnologia, empreendedorismo
+            e inovação. Como fundador da Lumos Connect,
+            busco transformar ideias em soluções digitais
+            que contribuam para experiências mais acessíveis
+            e conectadas.
+          </p>
+
+        </section>
+
+        <!-- COMPETÊNCIAS TÉCNICAS -->
+        <section
+          id="competencias"
+          class="content-section skills-section"
+          aria-labelledby="skills-title"
+        >
+
+          <p class="eyebrow">
+            EXPERTISE
+          </p>
+
+          <h2 id="skills-title">
+            Tecnologias &amp; Competências
+          </h2>
+
+          <div
+            class="skill-list"
+            aria-label="Minhas habilidades técnicas"
+          >
+
+            <span class="skill skill-accent">
+              Python
+            </span>
+
+            <span class="skill">
+              JavaScript
+            </span>
+
+            <span class="skill">
+              Node.js
+            </span>
+
+            <span class="skill skill-accent">
+              React
+            </span>
+
+            <span class="skill">
+              Docker
+            </span>
+
+            <span class="skill">
+              DevOps
+            </span>
+
+          </div>
+
+        </section>
+
+        <!-- SOFT SKILLS -->
+        <section
+          id="humano"
+          class="content-section soft-skills-section"
+          aria-labelledby="human-title"
+        >
+
+          <p class="eyebrow">
+            HUMANO
+          </p>
+
+          <h2 id="human-title">
+            Além do código
+          </h2>
+
           <ul class="soft-skills">
             <li>Liderança</li>
             <li>Comunicação</li>
             <li>Resolução de problemas</li>
             <li>Pensamento estratégico</li>
           </ul>
+
         </section>
+
       </main>
 
+      <!-- RODAPÉ -->
       <footer class="site-footer">
-        <p class="footer-name">Luiz Eduardo</p>
-        <p class="footer-position">CEO &amp; Fundador — Lumos Connect</p>
-        <p class="footer-motto">Conectando tecnologia, inovação e pessoas.</p>
-        <small>© <span id="year">2026</span> — Todos os direitos reservados.</small>
+
+        <p class="footer-name">
+          Luiz Eduardo
+        </p>
+
+        <p class="footer-position">
+          CEO &amp; Fundador — Lumos Connect
+        </p>
+
+        <p class="footer-motto">
+          Conectando tecnologia, inovação e pessoas.
+        </p>
+
+        <small>
+          © <span id="year">2026</span>
+          — Todos os direitos reservados.
+        </small>
+
       </footer>
+
     </div>
   </body>
 </html>
