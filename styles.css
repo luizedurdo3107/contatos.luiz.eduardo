@@ -231,3 +231,39 @@ h1, h2, p { margin-top: 0; }
 .hero-monogram::after {
   pointer-events: none;
 }
+
+
+/* INICIO FOTO LUIZ */
+
+/* Foto principal */
+.hero .hero-monogram {
+    width: 176px !important;
+    height: 176px !important;
+    min-width: 176px;
+    min-height: 176px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 24px;
+    flex-shrink: 0;
+}
+
+.hero .hero-monogram img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 50%;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .hero .hero-monogram {
+        width: 148px !important;
+        height: 148px !important;
+        min-width: 148px;
+        min-height: 148px;
+    }
+}
+
+/* FIM FOTO LUIZ */
